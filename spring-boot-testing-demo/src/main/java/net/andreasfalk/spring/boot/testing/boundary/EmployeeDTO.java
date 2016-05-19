@@ -32,7 +32,10 @@ public class EmployeeDTO implements Serializable {
     @NotNull
     private Set<AssignedSkillDTO> assignedSkills = new HashSet<> ();
 
-    public EmployeeDTO ( Gender gender, String firstName, String lastName, String email) {
+    public EmployeeDTO() {
+    }
+
+    public EmployeeDTO (Gender gender, String firstName, String lastName, String email) {
         this(gender,firstName,lastName,email,new HashSet<> ());
     }
 

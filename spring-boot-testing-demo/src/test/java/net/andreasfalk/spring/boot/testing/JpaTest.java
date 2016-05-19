@@ -50,5 +50,4 @@ public class JpaTest {
 
 		assertThat ("Should have returned expected number of matches", employeeList.size (), is (1));
 	}
-
 }
